@@ -1,0 +1,169 @@
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-color: var(--color-black); - Moved to gridContainer to prevent sharp corners behind rounded grid */
+}
+
+.slideContainer {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 0;
+    width: 100%;
+    /* aspect-ratio: 16 / 9; - Removed to prevent clipping */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-black);
+}
+
+
+.gridItem {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    overflow: visible;
+    z-index: 1;
+    /* transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s; */
+}
+
+.overlay {
+    position: fixed;
+    z-index: 9999;
+    border-radius: 4px;
+    /* overflow: hidden; - Removed to allow content to expand if needed, but flex items should fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transform-origin: center center;
+    animation: scaleUp 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.overlayContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; - Removed to allow vertical expansion */
+    background-color: black;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hiddenPreload {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+    }
+}
+
+.robotVideo {
+    aspect-ratio: 4 / 3;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.actionCurveVideo {
+    aspect-ratio: 3 / 1;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+.gridItem video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Specific corner rounding removed - using overflow:hidden on container instead */
+
+
+
+/* Nav button styling update */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 0;
+    background-color: var(--color-white);
+}
+
+.navButton {
+    background-color: var(--nvidia-green);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navButton:hover {
+    transform: scale(1.05);
+}
+
+
+
+.navButton svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* Overlay for grid when video is expanded to increase focus */
+.gridOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 10;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.gridOverlayVisible {
+    opacity: 1;
+}

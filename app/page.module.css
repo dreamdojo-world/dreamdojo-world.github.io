@@ -1,0 +1,477 @@
+.blogPost {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blogTitle {
+  font-size: 2.2rem;
+  max-width: 100%;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.dreamTitle {
+  color: var(--nvidia-green);
+  font-size: 2em;
+  line-height: 1.2;
+
+}
+
+.subtitleText {
+  color: var(--color-black);
+  font-size: 0.8em;
+  font-weight: bold;
+
+}
+
+.subtitle {
+  font-size: 0.9em;
+
+  color: var(--color-text-subtitle);
+  margin-top: 0.5rem;
+}
+
+
+.authors {
+  max-width: 960px;
+  margin: 1.5rem auto 0.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.authorList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  align-items: baseline;
+
+}
+
+.authorName {
+  font-size: 1.1rem;
+  color: var(--color-black);
+  white-space: nowrap;
+
+  font-weight: normal;
+}
+
+.authorName sup {
+  color: var(--nvidia-green-darker);
+
+  font-size: 1rem;
+  margin-left: 1px;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.authorLink {
+  color: var(--color-black);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.authorLink:hover {
+  color: var(--nvidia-green-darker);
+
+  text-decoration: none;
+}
+
+.affiliation {
+  font-size: 1.2rem;
+  color: var(--nvidia-green-darker);
+
+  margin-bottom: 1rem;
+
+}
+
+
+.affiliationContainer {
+  color: var(--color-black);
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.8rem;
+  line-height: 1.2;
+  align-items: baseline;
+}
+
+.affiliationItem {
+  white-space: nowrap;
+}
+
+.affiliationNumber {
+  color: var(--nvidia-green-darker);
+  vertical-align: super;
+  font-size: 0.8rem;
+}
+
+.affiliationName {
+  color: var(--color-black);
+  font-weight: normal;
+}
+
+.authorNote {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+
+  font-style: italic;
+  font-weight: normal;
+}
+
+.authorNote sup {
+  color: var(--nvidia-green-darker);
+
+  font-size: 0.8rem;
+}
+
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.textLink {
+  color: var(--color-text-link);
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: relative;
+  padding: 0.2rem 0.4rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.textLink:hover {
+  color: var(--color-black);
+}
+
+.borderedLink {
+  border: 2px solid var(--nvidia-green);
+  background-color: var(--nvidia-green);
+  color: var(--color-white);
+  border-radius: 9999px;
+  padding: 10px 12px;
+  margin: 0rem 0.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+
+  font-weight: bold;
+  line-height: 1;
+}
+
+.borderedLink:hover {
+  background-color: transparent;
+  color: var(--nvidia-green);
+  border-color: var(--nvidia-green);
+}
+
+.linkDivider {
+  display: none;
+}
+
+
+.blogContent {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.blogContent>p,
+.blogContent>h1,
+.blogContent>h2,
+.blogContent>h3,
+.blogContent>h4,
+.blogContent>h5,
+.blogContent>h6,
+.blogContent>ul,
+.blogContent>ol,
+.blogContent>blockquote {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogContent h2 {
+  margin: 3rem 0rem 1rem 0rem;
+  font-size: 1.8rem;
+  color: var(--nvidia-green);
+
+  font-weight: bold;
+}
+
+.highlightsList {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlightsList li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.highlightsList li::marker {
+  color: var(--nvidia-green-darker);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.highlightTitle {
+  color: var(--nvidia-green-darker);
+  font-weight: bold;
+}
+
+.blogContent p {
+  margin-bottom: 2rem;
+  color: var(--color-text-body);
+}
+
+
+.imageWrapper {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.projectImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+.captionTitle {
+  font-weight: bold;
+  color: var(--nvidia-green-darker);
+}
+
+
+.videoContainer {
+  width: 100%;
+  position: relative;
+  margin: 1rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.videoElement {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.videoElement:hover {
+  z-index: 2;
+}
+
+
+.videoWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 8px;
+}
+
+.videoWrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.plyrVideo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.videoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.loadingText {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.loadingText:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--color-white);
+  border-radius: 50%;
+  animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.videoLoading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--nvidia-green);
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.customPlayer {
+  --plyr-color-main: var(--nvidia-green);
+
+  --plyr-video-control-color: var(--color-white);
+  --plyr-video-control-color-hover: var(--color-white);
+  --plyr-video-control-background-hover: var(--plyr-color-main);
+  --plyr-audio-control-background-hover: var(--plyr-color-main);
+  --plyr-video-control-radius: 3px;
+  --plyr-range-thumb-height: 13px;
+  --plyr-range-track-height: 5px;
+  --plyr-range-fill-background: var(--plyr-color-main);
+  --plyr-badge-background: var(--plyr-color-main);
+  --plyr-tooltip-background: rgba(0, 0, 0, 0.75);
+  --plyr-tooltip-color: var(--color-white);
+  --plyr-tooltip-radius: 3px;
+  --plyr-control-spacing: 10px;
+  --plyr-control-radius: 3px;
+  --plyr-font-size-base: 14px;
+  --plyr-font-size-small: 12px;
+  --plyr-video-background: var(--color-black);
+  --plyr-control-toggle-checked-background: var(--plyr-color-main);
+}
+
+.customPlayer :global(.plyr--video) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.customPlayer :global(.plyr__control--overlaid) {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 15px;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+.customPlayer :global(.plyr__control--overlaid:hover) {
+  background: var(--plyr-color-main);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.customPlayer :global(.plyr__control--overlaid svg) {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.customPlayer :global(.plyr__controls) {
+  padding: 8px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.customPlayer:hover :global(.plyr__controls) {
+  opacity: 1;
+}
+
+.customPlayer :global(.plyr__progress__buffer) {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.customPlayer :global(.plyr__time) {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: var(--font-sans);
+}
+
+.customPlayer :global(.plyr__volume) {
+  min-width: 60px;
+}
+
+.customPlayer :global(.plyr--full-ui input[type=range]) {
+  color: var(--plyr-color-main);
+}
+
+.customPlayer :global(.plyr--video .plyr__controls .plyr__control:hover) {
+  background: var(--nvidia-green);
+  opacity: 0.6;
+
+}
+
+
+.bibtexContainer {
+  margin-bottom: 8rem;
+}
+
+.bibtex {
+  background-color: var(--color-bg-light);
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: var(--color-text-body);
+  line-height: 1.2;
+  border: 1px solid var(--color-border);
+}

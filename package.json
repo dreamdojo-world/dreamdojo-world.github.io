@@ -1,0 +1,19 @@
+{
+  "name": "dreamdojo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "hls.js": "^1.6.15",
+    "next": "^16.1.6",
+    "patternomaly": "^1.3.2",
+    "plyr": "^3.8.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  }
+}
