@@ -1,16 +1,15 @@
 :root {
   --background: #ffffff;
   --foreground: #1f1f1f;
-  --nvidia-green: #76B900;
-  --nvidia-green-darker: #67A300;
-
+  --color-green: #60ae13;
+  --color-green-darker: #4a7d18;
 
   --font-sans: 'NVIDIA Sans', sans-serif;
   --font-serif: 'Computer Modern Serif', serif;
   --font-mono: 'Courier New', Courier, monospace;
 
-
   --color-black: #1f1f1f;
+  --color-grey: #525252;
   --color-white: #ffffff;
   --color-text-title: #000000;
   --color-text-body: #333333;

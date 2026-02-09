@@ -19,15 +19,14 @@
 }
 
 .dreamTitle {
-  color: var(--nvidia-green);
-  font-size: 2em;
+  color: var(--color-black);
+  font-size: 4rem;
   line-height: 1.2;
-
 }
 
 .subtitleText {
   color: var(--color-black);
-  font-size: 0.8em;
+  font-size: 1.8rem;
   font-weight: bold;
 
 }
@@ -59,7 +58,7 @@
 }
 
 .authorName {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-black);
   white-space: nowrap;
 
@@ -67,9 +66,11 @@
 }
 
 .authorName sup {
-  color: var(--nvidia-green-darker);
+  /* color: var(--color-green-darker); */
+  color: var(--color-green-darker);
 
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 0.8rem;
   margin-left: 1px;
   vertical-align: super;
   line-height: 0;
@@ -82,15 +83,13 @@
 }
 
 .authorLink:hover {
-  color: var(--nvidia-green-darker);
+  color: var(--color-green-darker);
 
   text-decoration: none;
 }
 
 .affiliation {
-  font-size: 1.2rem;
-  color: var(--nvidia-green-darker);
-
+  color: var(--color-green-darker);
   margin-bottom: 1rem;
 
 }
@@ -98,7 +97,7 @@
 
 .affiliationContainer {
   color: var(--color-black);
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -116,9 +115,9 @@
 }
 
 .affiliationNumber {
-  color: var(--nvidia-green-darker);
+  color: var(--color-green-darker);
   vertical-align: super;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .affiliationName {
@@ -127,7 +126,7 @@
 }
 
 .authorNote {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-black);
   margin-bottom: 0.5rem;
 
@@ -136,9 +135,9 @@
 }
 
 .authorNote sup {
-  color: var(--nvidia-green-darker);
+  color: var(--color-green-darker);
 
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 
@@ -164,11 +163,11 @@
 }
 
 .borderedLink {
-  border: 2px solid var(--nvidia-green);
-  background-color: var(--nvidia-green);
+  border: 2px solid var(--color-green);
+  background-color: var(--color-green);
   color: var(--color-white);
-  border-radius: 9999px;
-  padding: 10px 12px;
+  border-radius: 8px;
+  padding: 10px 16px;
   margin: 0rem 0.5rem;
   display: inline-block;
   transition: all 0.3s ease;
@@ -179,9 +178,11 @@
 }
 
 .borderedLink:hover {
-  background-color: transparent;
-  color: var(--nvidia-green);
-  border-color: var(--nvidia-green);
+  /* background-color: transparent; */
+  background-color: var(--color-green-darker);
+  /* color: var(--color-green-darker); */
+  color: var(--color-white);
+  border-color: var(--color-green-darker);
 }
 
 .linkDivider {
@@ -212,9 +213,9 @@
 }
 
 .blogContent h2 {
-  margin: 3rem 0rem 1rem 0rem;
+  margin: 5rem 0rem 1.5rem 0rem;
   font-size: 1.8rem;
-  color: var(--nvidia-green);
+  color: var(--color-black);
 
   font-weight: bold;
 }
@@ -230,18 +231,18 @@
 }
 
 .highlightsList li::marker {
-  color: var(--nvidia-green-darker);
+  color: var(--color-black);
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .highlightTitle {
-  color: var(--nvidia-green-darker);
+  color: var(--color-black);
   font-weight: bold;
 }
 
 .blogContent p {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--color-text-body);
 }
 
@@ -253,19 +254,18 @@
 
 .projectImage {
   width: 100%;
-  border-radius: 8px;
 }
 
 .caption {
   text-align: center;
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: var(--color-black);
   margin-top: 0.5rem;
 }
 
 .captionTitle {
   font-weight: bold;
-  color: var(--nvidia-green-darker);
+  color: var(--color-black);
 }
 
 
@@ -363,7 +363,7 @@
   border: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.2);
-  border-top-color: var(--nvidia-green);
+  border-top-color: var(--color-green);
 
   animation: spin 1s linear infinite;
 }
@@ -376,7 +376,7 @@
 
 
 .customPlayer {
-  --plyr-color-main: var(--nvidia-green);
+  --plyr-color-main: var(--color-green);
 
   --plyr-video-control-color: var(--color-white);
   --plyr-video-control-color-hover: var(--color-white);
@@ -453,7 +453,7 @@
 }
 
 .customPlayer :global(.plyr--video .plyr__controls .plyr__control:hover) {
-  background: var(--nvidia-green);
+  background: var(--color-green);
   opacity: 0.6;
 
 }
