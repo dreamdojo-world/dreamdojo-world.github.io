@@ -114,13 +114,7 @@ export default function VideoCarousel({ slides }) {
         setHoveredVideo(null);
     };
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-    };
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
-    };
 
     return (
         <div className={styles.carouselContainer}>
@@ -216,16 +210,15 @@ export default function VideoCarousel({ slides }) {
             )}
 
             <div className={styles.controls}>
-                <button className={styles.navButton} onClick={prevSlide} aria-label="Previous Video">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                    </svg>
-                </button>
-                <button className={styles.navButton} onClick={nextSlide} aria-label="Next Video">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    </svg>
-                </button>
+                {slides.map((slide, index) => (
+                    <button
+                        key={index}
+                        className={`${styles.navButton} ${index === currentIndex ? styles.active : ''}`}
+                        onClick={() => setCurrentIndex(index)}
+                    >
+                        {slide.label}
+                    </button>
+                ))}
             </div>
         </div >
     );
