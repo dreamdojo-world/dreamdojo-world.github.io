@@ -106,7 +106,7 @@
 .gridItem video {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -125,30 +125,36 @@
 }
 
 .navButton {
-    background-color: var(--nvidia-green);
-    color: var(--color-white);
-    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-black);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .navButton:hover {
-    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
+.navButton.active {
+    background-color: var(--nvidia-green);
+    color: var(--color-white);
+    border-color: var(--nvidia-green);
+    font-weight: 600;
+}
 
-
+/* 
 .navButton svg {
     width: 18px;
     height: 18px;
     fill: currentColor;
-}
+} 
+*/
 
 /* Overlay for grid when video is expanded to increase focus */
 .gridOverlay {
