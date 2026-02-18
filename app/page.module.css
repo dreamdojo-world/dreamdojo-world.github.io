@@ -213,11 +213,15 @@
 }
 
 .blogContent h2 {
-  margin: 5rem 0rem 1.5rem 0rem;
-  font-size: 1.8rem;
+  margin: 5rem auto 1.5rem auto;
+  font-size: 2.2rem;
   color: var(--color-black);
+  display: table;
 
   font-weight: bold;
+  border-bottom: 4px solid var(--color-green);
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .highlightsList {
