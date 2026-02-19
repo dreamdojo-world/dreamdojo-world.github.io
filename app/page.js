@@ -93,8 +93,8 @@ export default function FirstPost() {
               Paper
             </a>
             <span className={styles.linkDivider}>•</span>
-            <a href="https://dreamdojo-world.github.io/#" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
-              Code (Coming Soon!)
+            <a href="https://github.com/NVIDIA/DreamDojo" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+              Code
             </a>
             <span className={styles.linkDivider}>•</span>
             <a href="https://dreamdojo-world.github.io/#" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
