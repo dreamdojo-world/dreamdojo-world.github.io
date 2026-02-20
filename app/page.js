@@ -97,7 +97,7 @@ export default function FirstPost() {
               Code
             </a>
             <span className={styles.linkDivider}>•</span>
-            <a href="https://dreamdojo-world.github.io/#" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/ShenyuanGao/status/2024898256334114876" className={`${styles.textLink} ${styles.borderedLink}`} target="_blank" rel="noopener noreferrer">
               Thread
             </a>
           </div>
